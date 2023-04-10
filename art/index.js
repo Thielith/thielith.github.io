@@ -1,11 +1,4 @@
-fetch('./images/_files.json')
-        .then((response) => response.json())
-        .then((json) => saveJSON(json));
-
-var data;
-
-function saveJSON(json){
-    data = json;
+function startPage(){
     loadImages("any");
 }
 

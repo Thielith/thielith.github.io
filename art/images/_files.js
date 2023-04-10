@@ -1,4 +1,4 @@
-{
+var data = {
 	"images": [
         {
 			"date": 20230304,
