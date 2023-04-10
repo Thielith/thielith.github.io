@@ -1,0 +1,443 @@
+{
+	"images": [
+        {
+			"date": 20230304,
+			"imageType": "pixel",
+			"fileName": "mar10_block-hopper.png",
+			"title": "Block Hopper Walking",
+			"description": "Created for the <a href='https://twitter.com/RenderMario/status/1632164201715179521'>RenderMario Mar10 Art Collab</a>.<br><br> A Block Hopper enemy from New Super Mario Bros. DS walking to the right.",
+			"tool": "Aseprite",
+			"time": "3 hours",
+			"noPixelate": true
+		},
+		{
+			"date": 20230225,
+			"imageType": "pixel",
+			"fileName": "risk-of-rain_survivors.png",
+			"title": "Risk of Rain 2 Survivors",
+			"description": "The playable survivors of Risk of Rain 2 in various poses.",
+			"tool": "Aseprite",
+			"time": "Over 8 hours"
+		},
+		{
+			"date": 20230216,
+			"imageType": "vector",
+			"fileName": "providence-gup.jpg",
+			"title": "Providence from Risk of Rain",
+			"description": "Created for the Providence Fan Art event held on the <a href='https://discord.com/invite/riskofrain2'>Official Risk of Rain Discord Server</a>.<br><br> Providence, the final boss of the game Risk of Rain, holding a Gup, a slime enemy from the same game.",
+			"tool": "Adobe Animate",
+			"time": "10 hours 30 minutes"
+		},
+		{
+			"date": 20230201,
+			"imageType": "model",
+			"fileName": "tutorial-area.png",
+			"title": "Generic Grid Area",
+			"description": "A basic wall and floor with a checkerboard pattern. Used as a background image for a gag in [insert video].",
+			"tool": "Blender",
+			"time": "1 hour 5 minutes"
+		},
+
+		{
+			"date": 20221215,
+			"imageType": "pixel",
+			"fileName": "program-cubes.png",
+			"title": "Various Cube Computer Program Icons",
+			"description": "Program icons contained in isometric cubes. In conjunction with <a href='https://www.rainmeter.net/'>Rainmeter</a>, I used these icons as shortcuts to their respective program.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20221030,
+			"imageType": "vector",
+			"fileName": "ror2-horror-poster.png",
+			"title": "Risk of Rain Horror Poster",
+			"description": "Created for the Bloodrain Art Contest held on the <a href='https://discord.com/invite/riskofrain2'>Official Risk of Rain Discord Server</a>.<br><br> The objective for this contest was to create a movie poster related to the Risk of Rain universe. Taking inspiration from the Predatory Instincts log from Risk of Rain 2, this movie poster depicts the \"demon, fallen from the Sky, with 22 unblinking, crimson eyes.\" Through my interpretation of the game's lore, I figured this was referring to one of the survivors from the previous game, Risk of Rain. The reason I chose Commando, one of the survivors from the aforementioned game, was due to a popular fan theory; the survivor who killed Providence was a Commando.<br><br> The various actor and company names are thematic parodies of real life actors and companies, respectivley. (Gup Devito is Danny Devito, Michael Stone is Keegan-Michael Key, etc.)<br><br> Originally, I was going to base the poster off of one of the Slenderman (2018) posters, but I eventaully came up with a better concept.",
+			"tool": "Adobe Animate",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20221010,
+			"imageType": "pixel",
+			"fileName": "PAD_2022_24x4_all.gif",
+			"title": "P.A.D 24x4 Contest 2022",
+			"description": "Created for the 24x4 Contest held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> Over the course of 24 days in October, each contestant would create a 24x24 pixel art piece based on that day's prompt. Each piece could only use 24 colors and each piece has to use the same color palette.<br><br> Unfortunetly, I became too busy to complete the contest in full, but I was able to complete 9 out of the 24 prompts.",
+			"tool": "Aseprite",
+			"time": "9 days"
+		},
+		{
+			"date": 20220719,
+			"imageType": "vector",
+			"fileName": "gup_suit.png",
+			"title": "Gup Suit",
+			"description": "Created for the Prom Night mini art event held on the <a href='https://discord.com/invite/riskofrain2'>Official Risk of Rain Discord Server</a>.<br><br> \"A promenade dance, commonly called a prom in American English, is a dance party for high school students. It may be offered in semi-formal black tie or informal suit for boys, and evening gowns for girls.\" - Wikipedia<br><br> Participants of this mini art event were to draw Risk of Rain (RoR) characters and/or RoR original characters (OCs) in fancy suits and/or dresses. I decided to draw a gup, a slime enemy from the game, in a suit because it was funny.",
+			"tool": "Adobe Animate",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20220714,
+			"imageType": "pixel",
+			"fileName": "frisk-undertale.png",
+			"title": "Frisk from Undertale",
+			"description": "Frisk from Undertale in my art style at the time.",
+			"tool": "Aseprite",
+			"time": "15-ish minutes"
+		},
+		{
+			"date": 20220608,
+			"imageType": "pixel",
+			"fileName": "undertale-intro-with-others.png",
+			"title": "Undertale Intro with Others",
+			"description": "One of the intro cutscene panels from Undertale with other video game characters inserted in. These characters include Kirby (Kirby), Mario (Mario), Sunny (OMORI), Welltaro (Downwell), Kris and Susie (Deltarune)",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20220603,
+			"imageType": "pixel",
+			"fileName": "super-mario-bros_resprited.png",
+			"title": "Super Mario Bros. Resprited Rom Hack",
+			"description": "A project to redo the sprites from Super Mario Bros. using the same limitations: 4 colors, 8x8 sprites.  Due to this being a rom hack, each sprite would need to fit within the same space as a Super Mario Bros. NES ROM. A link to the IPS patch file can be found here: [insert link to file].",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20220422,
+			"imageType": "pixel",
+			"fileName": "risk-of-rain_commando-perspective.png",
+			"title": "Small Commando from Risk of Rain 2",
+			"description": "An attempt at making an art piece with a different camera perspective. Here, the intent was to place the \"camera\" near the gun's barrel with a high field of view, so it looks like the Commando is far away and small. However, it also looks like it's just a small Commando with a big gun,",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20220320,
+			"imageType": "pixel",
+			"fileName": "rivals-of-aether_block-hopper-normals.gif",
+			"title": "Block Hopper in Rivals of Aether",
+			"description": "Sprites for a (canceled) Rivals of Aether Steam Workshop mod that would add a block hopper from New Super Mario Bros. DS as a fighter. The concept was taken from <a href='https://twitter.com/LilBedoop/status/1457817279903772673'>@LilBedoop</a> on Twitter.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20220226,
+			"imageType": "vector",
+			"fileName": "gup_group.png",
+			"title": "The Various Forms of Gup",
+			"description": "A gup, a gip, and a geep from Risk of Rain. This is my first vector-based art piece.",
+			"tool": "Toon Boom Harmony",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20220103,
+			"imageType": "pixel",
+			"fileName": "bob-omb.png",
+			"title": "A Blue Bob-omb",
+			"description": "I got pinged in a friend Discord server I'm in about a dream someone had. Apparently in their dream my profile picture was changed to a bob-omb from the Mario franchise instead of what I usually use. Obviously after hearing such a thing, I decided to make it true and made this. I kept it on for the rest of the day.",
+			"tool": "Aseprite",
+			"time": "15-30 minutes",
+			"noPixelate": true
+		},
+
+		{
+			"date": 20211224,
+			"imageType": "pixel",
+			"fileName": "christmas-tree_2021_all.png",
+			"title": "Christmas Tree Ornament Challenge",
+			"description": "A self-imposed challenge where I create 16x16 images of characters and/or objects for the first 25 days of December to put onto a big Christmas tree. Each ornament is a character or item from a piece of media I enjoyed at the time.<br><br> There's also an egg in place of a star, because why not.",
+			"tool": "Aseprite",
+			"time": "25 days",
+			"noPixelate": true
+		},
+		{
+			"date": 20211228,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_santa_N1cknam-2249.png",
+			"title": "P.A.D Secret Santa Gift for N1cknam#2249",
+			"description": "Created for the Secret Santa Christmas event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> \"Secret Santa is a Western Christmas tradition in which members of a group or community are randomly assigned a person to whom they give a gift. The identity of the gift giver is to remain a secret and should not be revealed.\" - Wikipedia",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211211,
+			"imageType": "pixel",
+			"fileName": "comp-mouse_robot.png",
+			"title": "Unnamed Robot O.C",
+			"description": "A robot original character (OC) I made based on the mouse I use and its peripherals.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211209,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_santa_Six-1947.png",
+			"title": "P.A.D Secret Santa Gift for Six#1947",
+			"description": "Created for the Secret Santa Christmas event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> \"Secret Santa is a Western Christmas tradition in which members of a group or community are randomly assigned a person to whom they give a gift. The identity of the gift giver is to remain a secret and should not be revealed.\" - Wikipedia",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211208,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_santa_6ER1-5281.png",
+			"title": "P.A.D Secret Santa Gift for 6ER1#5281",
+			"description": "Created for the Secret Santa Christmas event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> \"Secret Santa is a Western Christmas tradition in which members of a group or community are randomly assigned a person to whom they give a gift. The identity of the gift giver is to remain a secret and should not be revealed.\" - Wikipedia",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211031,
+			"imageType": "pixel",
+			"fileName": "bonetober_2021.png",
+			"title": "Bonetober 2021 Collage",
+			"description": "Created for the Bonetober art event created by <a href='https://twitter.com/Thinginator90/status/1443458414697345024'>@Thinginator90</a> on Twitter.<br><br> Bonetober is an art challenge event where participants draw a skeleton-related character each day for the entirety of October. The skeletons I chose to draw come from various video games and cartoons.",
+			"tool": "Aseprite",
+			"time": "31 days"
+		},
+		{
+			"date": 20211030,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_uprez-5.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2021 Submission #5",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous day and redraw it in a higher resolution, while keeping the same color palette. The event ran for 5 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 48x48 and the twist was to make an arch nemesis for the chosen submission. I chose a floating muscular arm someone drew and drew a giant magic-powered zombie arm.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211029,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_uprez-4.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2021 Submission #4",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous day and redraw it in a higher resolution, while keeping the same color palette. The event ran for 5 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 32x32 and the twist was to make a little buddy for the chosen submission. I chose a sentient poker chip character someone drew and made a little sibling for them.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211028,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_uprez-3.gif",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2021 Submission #3",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous day and redraw it in a higher resolution, while keeping the same color palette. The event ran for 5 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 64x64 and the twist was to swap the evil/good of the chosen submission. I chose an evil cactus monster someone drew and made it vibe.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211027,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_uprez-2.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2021 Submission #2",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous day and redraw it in a higher resolution, while keeping the same color palette. The event ran for 5 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 96x96 and the twist was to combine two entries from the previous art event. I chose the puppet from FNAF someone drew and some pink and yellow shades someone else drew.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211026,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_uprez-1.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2021 Submission #1",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous day and redraw it in a higher resolution, while keeping the same color palette. The event ran for 5 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 128x128. We had to take someone's entry from the previous art event since this was the first day of this event. I chose a cactus from Minecraft someone drew.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20211025,
+			"imageType": "pixel",
+			"fileName": "PAD_2021_24x4_all.gif",
+			"title": "P.A.D 24x4 Contest 2021",
+			"description": "Created for the 24x4 Contest held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> Over the course of 24 days in October, each contestant would create a 24x24 pixel art piece based on that day's prompt. Each piece could only use 24 colors and each piece has to use the same color palette.<br><br> Fun Facts:<br> - The maid is heavily based off Sakuya Izayoi from the Touhou franchise.<br> - The fairy is from a game I made for a game jam.<br> - The sun and moon are a reference to a <a href='https://www.youtube.com/watch?v=O8SL3VEQEqQ'>video by TerminalMontage</a>.<br><br>",
+			"tool": "Aseprite",
+			"time": "24 days"
+		},
+		{
+			"date": 20210926,
+			"imageType": "pixel",
+			"fileName": "halloween_me.png",
+			"title": "Thielith on Halloween 2021",
+			"description": "The character that I use to represent my internet persona, Thielith, in an outfit and pose that resembels the character Megumin from the anime, Konosuba.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20210926,
+			"imageType": "pixel",
+			"fileName": "halloween_squares.png",
+			"title": "Squares on Halloween 2021",
+			"description": "My original character, Squares, with their body replaced with a skeleton.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20210915,
+			"imageType": "pixel",
+			"fileName": "undertale_intro.gif",
+			"title": "Undertale Intro Cutscene Animated",
+			"description": "An animated interpretation of one of the intro cutscene panels from Undertale, drawn in my artstyle at the time.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20210901,
+			"imageType": "pixel",
+			"fileName": "gup_slice.gif",
+			"title": "Gup Being Sliced",
+			"description": "The logbook portrait image of a gup from Risk of Rain. After a short bit of time, they are sliced in half, creating two geeps.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20210816,
+			"imageType": "pixel",
+			"fileName": "PACT_submission-2.png",
+			"title": "Pixel Art Community Tower Collab Entry #2",
+			"description": "Created for the Pixel Art Community Tower Collab held by @pixel_plumber on Twitter.<br><br> Participants of this collab can create a sprite of any size, but the sprite must have a single point of contact at the top and bottom of the canvas in a straight line. We are also limited to the colors of the Rosy-42 color palette and must have a pure black outline around our entries.<br><br> For this entry, I drew Sans from Undertale.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20210816,
+			"imageType": "pixel",
+			"fileName": "PACT_submission-1.png",
+			"title": "Pixel Art Community Tower Collab Entry #1",
+			"description": "Created for the Pixel Art Community Tower Collab held by @pixel_plumber on Twitter.<br><br> Participants of this collab can create a sprite of any size, but the sprite must have a single point of contact at the top and bottom of the canvas in a straight line. We are also limited to the colors of the Rosy-42 color palette and must have a pure black outline around our entries.<br><br> For this entry, I drew my original character, Squares.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20210807,
+			"imageType": "model",
+			"fileName": "pm_hammer.png",
+			"title": "Paper Mario Hammer",
+			"description": "A 3D model of a hammer from the Paper Mario series.",
+			"tool": "Blender",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20210717,
+			"imageType": "model",
+			"fileName": "gup_3d.png",
+			"title": "Gup from Risk of Rain in 3D",
+			"description": "A 3D model of a gup slime enemy from Risk of Rain.<br><br> At the time, gups were not in Risk of Rain 2, Risk of Rain's 3D sequel game. While leading a campaign to have Hopoo Games, the creators of the Risk of Rain franchise, add gups to the game, I created this model. It was also my first time making a model in Blender.",
+			"tool": "Blender",
+			"time": "Not Avaliable"
+		},
+
+		{
+			"date": 20201223,
+			"imageType": "pixel",
+			"fileName": "terraria_onyx-blaster.png",
+			"title": "Terraria Onyx Blaster",
+			"description": "The Onyx Blaster weapon from Terraria, except at a higher resolution.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20201212,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_pixmas-1.png",
+			"title": "P.A.D 12 Days of Pixmas Submission #1",
+			"description": "Created for the 12 Days of Pixmas art event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The holidays were approaching, so the PAD Discord server held an art event. For the 12 days of Pixmas, we would get an art prompt each day that was roughly related to the holidays.<br><br> For this day, we were simply asked what we/our original characters (OC) were up to this year. I chose to be a bit funny and made \"The Karaoke Incident.\" Essentially, someone was singing karaoke and \"All I Want For Christmas\" came on, which led to a wave of \"Christmas Spirit\" being blasted outward. The Christmas energy makes anything it touches festive, while also being a nuisance to many. My OC, Squares, is running away from this burst, while my internet persona, Thielith, is trying to take out the source.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20201031,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_uprez-7.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2020 Submission #7",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous art event and redraw it in a higher resolution. The event ran for 7 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 96x96 and we had to combine two entries from the previous art event. We could also only use the colors from both entries. I chose to combine a mushroom someone drew and a potion someone else drew.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20201030,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_uprez-6.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2020 Submission #6",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous art event and redraw it in a higher resolution. The event ran for 7 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 96x96 and we had to use the palette we used from the previous art event. I chose to redraw a bullet enemy from Enter the Gungeon that someone else drew.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20201029,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_uprez-5.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2020 Submission #5",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous art event and redraw it in a higher resolution. The event ran for 7 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 128x128 and we could only use two colors. I chose to redraw a jellyfish from the Spongebob franchise that someone else drew.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20201028,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_uprez-4.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2020 Submission #4",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous art event and redraw it in a higher resolution. The event ran for 7 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 96x96 and we could only use two colors. I chose to redraw a shotgun shell enemy from Enter the Gungeon that someone else drew.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20201027,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_uprez-3.png",
+			"title": "P.A.D Upp-Rez-O-Tron Event 2020 Submission #3",
+			"description": "Created for the Upp-Rez-O-Tron event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> The overall theme of this event is to take someone else's submission from the previous art event and redraw it in a higher resolution. The event ran for 7 days, with each day changing which resolution to redraw a submission at, while also adding some sort of twist.<br><br> For this day, the resolution was 96x96. I chose to redraw a yoshi sprite that someone else drew.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20201024,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_24x4_all.png",
+			"title": "P.A.D 24x4 Contest 2020",
+			"description": "Created for the 24x4 Contest held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> Over the course of 24 days in October, each contestant would create a 24x24 pixel art piece based on that day's prompt. Each piece could only use 24 colors and each piece has to use the same color palette.<br><br> Some of these pieces aren't my proudest work, but they do make good pixel figurines.",
+			"tool": "Aseprite",
+			"time": "24 days"
+		},
+		{
+			"date": 20200911,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_champion-6.png",
+			"title": "P.A.D Champions of Pixonia Event Submission #6",
+			"description": "Created for the Champions of Pixonia event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> Over the course of a week, each contestant would create fake DLC for a fake game, with a different theme for each DLC every day.<br><br> For this day, we had to turn someone else's fake DLC character into a cuddly mascot. I found a human-based character and redrew them into a chibi-like form factor",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20200910,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_champion-5.gif",
+			"title": "P.A.D Champions of Pixonia Event Submission #5",
+			"description": "Created for the Champions of Pixonia event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> Over the course of a week, each contestant would create fake DLC for a fake game, with a different theme for each DLC every day.<br><br> For this day, we had to take someone's fake DLC character give them a costume based off a theme someone else chooses. I chose a fake DLC character and asked someone else for a theme; I got \"Avatar: The Last Airbender\" (ATLA). It took a bit to think about what I could even do with that theme, but I eventaully got an idea. I drew and animated a shadowy version of the fake DLC character imitating the earth bender part of the ATLA intro. The rock is the unoffical mascot of the PAD server, Carter.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20200908,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_champion-3.png",
+			"title": "P.A.D Champions of Pixonia Event Submission #3",
+			"description": "Created for the Champions of Pixonia event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> Over the course of a week, each contestant would create fake DLC for a fake game, with a different theme for each DLC every day.<br><br> For this day, we had to take someone's fake DLC character give them a Popstar costume. I chose a fake DLC character and drew them in the spotlight giving a performance.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20200907,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_champion-2.png",
+			"title": "P.A.D Champions of Pixonia Event Submission #2",
+			"description": "Created for the Champions of Pixonia event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> Over the course of a week, each contestant would create fake DLC for a fake game, with a different theme for each DLC every day.<br><br> For this day, we had to take someone's fake DLC character give them a Summer costume. Clearly, this isn't a summer costume. I somehow misread the prompt and drew a Japan inspired costume.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		},
+		{
+			"date": 20200716,
+			"imageType": "pixel",
+			"fileName": "PAD_2020_time-6.gif",
+			"title": "P.A.D A Journey Through Time Event Submission #6",
+			"description": "Created for the Journey Through Time event held on the <a href='https://discord.com/invite/pixelart'>Pixel Art Discord (PAD) Server</a>.<br><br> Over the course of a week, each contestant would draw an original character (OC) of theirs in different time periods, with a new time period each day.<br><br> For this day, our time period was \"Vaporwave.\" Not exactly a time period though, more of an aesthetic. Vaporwave tends to have random objects floating around in a neon world, so I drew that. The dance my OC is doing is the smug dance from A Hat in Time.",
+			"tool": "Aseprite",
+			"time": "Not Avaliable"
+		}
+
+	]
+}

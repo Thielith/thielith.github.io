@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <title>Thielith</title>
+        <script src="../utils.js"></script>
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="../home/index.css">
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="../home/images/icons/favicon.png">
+
+        <!-- External Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">-->
+    </head>
+
+    <body>
+        <div id="page-top"></div>
+        <!-- Top Bar -->
+        <div class="top-nav">
+            <div style="width:var(--topNavHeight)"></div>
+            <a href="../home"><b>Home</b></a>
+            <a class="nav-active"><b>Art</b></a>
+            <a href=""><b>Page2</b></a>
+            <a href=""><b>Page3</b></a>
+            <a href=""><b>Page4</b></a>
+        </div>
+
+        <!-- Image Details Pop-up -->
+        <div id="overlay" class="imageDetailsOverlay" onclick="hideOverlay()">
+            <div class="imageDetailsWindow">
+                <div id="overlayImage" class="image">
+                    <img id="imageDetailsImage" src="./images/vector/gup_suit.png">
+                </div>
+
+                <div><p class="invis-txt">e</p></div>
+
+                <div id="overlayText" class="text">
+                    <u><h1 id="imageDetailsTitle"> Title: Test </h1></u>
+                    <p id="imageDetailsDate"> Date: 00/00/0000 </p>
+                    <p id="imageDetailsTool"> Tool: Test </p>
+                    <p id="imageDetailsTime"> Time: Test </p> <hr>
+                    <p id="imageDetailsDescription"> Description time for eggs benedict. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="page-content">
+
+            <!-- Title -->
+            <div class="slice">
+                <div>
+                    <h1 style="font-size:100px"> Art Gallery </h1>
+                </div>
+            </div>
+
+            <!-- Gallery Category Chooser -->
+            <div class="menu">
+                <button id="menuButton" class="menuButton"> Medium: Any </button>
+                <div class="menuContent">
+                    <a onclick="setGalleryImages('any')"> Any </a>
+                    <a onclick="setGalleryImages('pixel')"> Pixel Art </a>
+                    <a onclick="setGalleryImages('vector')"> Vector </a>
+                    <a onclick="setGalleryImages('model')"> 3D Model </a>
+                    <a class="menuLastEntry" onclick="setGalleryImages('animation')"> Animation </a>
+                </div>
+            </div>
+
+            <!-- Gallery [loadImages()] -->
+            <div class="slice" style="background-color: peru;">
+                <div id="gallery" class="slice" style="max-width:95%">
+                </div>
+            </div>
+
+            <address>
+                Contact info: <br>
+                <a href="./content/art.html">line1</a> <br>
+                line2 <br>
+                line3 <br>
+            </address>
+
+            <a class="a-page" href="#page-top"><p>< Return to Top ></p></a>
+
+        </div>
+
+    </body>
+
+</html>
