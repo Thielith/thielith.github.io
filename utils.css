@@ -1,0 +1,162 @@
+:root{
+    --fontSize: 1rem;  /* dont change */
+	--textColor: white;
+	--dropShadowSettings: 0.35rem 0.35rem 0.25rem black;
+
+	--headerTextHeight: 1.2rem;
+    --headerPaddingTB: 0.5rem;
+	--headerHeight: calc(var(--headerTextHeight) + calc(var(--headerPaddingTB) * 3));
+	--headerHeightAlt: calc(var(--headerHeight) - var(--headerPaddingTB));
+	--headerColor: #0aa3a8;
+	--headerButtonHoverColor: #0cc8ce;
+	--headerButtonActiveColor: #067175;
+	--headerBoxShadowSettings: 0 20px 40px black;
+	--headerContentPaddingLR: 1rem;
+
+	--socialHeight: calc(var(--headerTextHeight) + 0.5rem);
+
+	--spacerHeight: 75px;
+}
+
+/* Font */
+@font-face { font-family: Pixels; src: url('./fonts/Pixels.ttf'); }
+
+ /* Default Overrides */
+html{
+	scroll-behavior: smooth;
+}
+body{
+	height: 100svh;
+	padding: 0;
+	margin: 0;
+
+	text-align: center;
+	font-family: Roboto Mono;
+	color: var(--textColor);
+
+	background-image: url("./images/background.png");
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	/*border: 1px solid red;*/
+}
+a:link, button{
+	color: white;
+}
+a:visited{
+	color: lightgray;
+}
+a:hover, button:hover{
+	color: limegreen;
+}
+a:active, button:active{
+	color: palegreen;
+}
+h1, h2, h3, p{
+	filter: drop-shadow(var(--dropShadowSettings));
+	/*border: 3px solid white;*/
+}
+h2, h3{
+	font-size: 2.2rem;
+}
+p{
+	font-size: 1.1rem;
+}
+.pixel{
+	image-rendering: pixelated;
+}
+.invisible{
+	opacity: 0;
+}
+.spacer{
+	height: var(--spacerHeight);
+	opacity: 0;
+}
+.cover-full-page{
+	/* idk why but headerHeight works fine in other contexts except the line below.  subtracting by TB makes it fit correctly */
+	height: calc(100svh - var(--headerHeightAlt));
+	width: 100%;
+	margin-top: var(--headerHeight);
+}
+
+
+.header{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	position: fixed;
+    top: 0;
+	z-index: 100;
+
+	font-size: var(--headerTextHeight);
+	background-color: var(--headerColor);
+	box-shadow: var(--sliceBoxShadowSettings);
+}
+.icon{
+	height: var(--headerHeightAlt);
+	padding-left: var(--headerContentPaddingLR);
+}
+.page-container{
+	margin: 0;
+	padding: var(--headerPaddingTB) var(--headerContentPaddingLR);
+
+	display: block;
+}
+.page, .page:visited{
+	margin: 0;
+	padding: var(--headerPaddingTB) var(--headerContentPaddingLR);
+
+	color: var(--textColor);
+	text-decoration: none;
+    font-weight: bold;
+
+	transition: all 100ms;
+}
+.page:hover{
+	color: var(--textColor);
+	background-color: var(--headerButtonHoverColor);
+
+	transition: all 100ms;
+}
+.page.active{
+	color: var(--textColor);
+	background-color: var(--headerButtonActiveColor);
+}
+
+.social-container{
+	height: var(--headerHeight);
+	margin: auto;
+	margin-right: var(--headerContentPaddingLR);
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 1ch;
+}
+.social-container > a{
+	display: flex;
+	justify-content: center;
+
+	color: var(--textColor);
+}
+.social-container > a:hover{
+	color: limegreen;
+}
+.social-container > a > ion-icon{
+	font-size: var(--socialHeight);
+}
+
+#top-shortcut{
+	margin: 2rem;
+
+	font-size: 2rem;
+}
+#top-shortcut > a{
+	text-decoration: none;
+}

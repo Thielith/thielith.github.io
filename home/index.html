@@ -3,207 +3,135 @@
 <html lang="en-US">
     <head>
         <title>Thielith</title>
-        <link rel="stylesheet" href="index.css">
-        <script src="../utils.js"></script>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../utils.css">
         <script src="./index.js"></script>
+        <script src="../utils.js"></script>
 
         <!-- Favicon -->
-        <link rel="icon" href="./images/icons/favicon.png">
+        <link rel="icon" href="../images/icons/favicon.png">
 
         <!-- External Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
-        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+        <base target="_blank">
     </head>
 
-    <body onload = "pageBoot()">
-        <div id="page-top"></div>
-        <!-- Top Bar -->
-        <div class="top-nav">
-            <div style="width:var(--topNavHeight)"></div>
-            <a class="nav-active"><b>Home</b></a>
-            <a href="../art"><b>Art</b></a>
-            <a href=""><b>Page2</b></a>
-            <a href=""><b>Page3</b></a>
-            <a href=""><b>Page4</b></a>
-        </div>
+    <body onload="onLoad()">
+        <!-- Header -->
+        <nav class="header">
+            <img class="icon" src="../images/icons/icon.png">
+            <div class="page-container">
+                <a class="page active">Home</a><!--
+             --><a target="_self" class="page" href="../art">Art</a><!--
+             --><!--<a target="_self" class="page" href="#">Page 2</a>-->
+            </div>
+
+            <div class="social-container">
+                <a href="https://www.youtube.com/channel/UCOWjHa8CAv14DSr_CKNfSjg"> <ion-icon name="logo-youtube"></ion-icon> </a>
+                <a href="https://www.twitter.com/Thi3lith"> <ion-icon name="logo-twitter"></ion-icon> </a>
+                <a href="https://cohost.org/thielith"> <ion-icon src="../images/icons/cohost.svg"></ion-icon> </a>
+                <a href="https://thielith.newgrounds.com/"> <ion-icon src="../images/icons/newgrounds.svg"></ion-icon> </a>
+            </div>
+        </nav>
 
         <!-- Page Content -->
-        <div class="page-content">
-            
-            <!-- Slice: Peak
-            <div style="display:flex;background-color:black;">
-                <div class="slice-peak" style="margin: 0 auto;">
-                    <h1>Thielith</h1>
-                    <img title="Thielith" src="./images/peak.png" class="img-pxl"
-                        alt="Thielith" height="200px"
-                    >
-                    <h1 class="invis-txt"><- Me</h1>
-                </div>
-            </div>-->
 
-            <!-- Slice: Logos -->
-            <div class="subsection">
-                <h1 class="invis-txt">secret text</h1>
+        <!-- Slice: Logos -->
+
+        <div class="logo-selector-container cover-full-page">
+            <h1 class="greeting"> Hello! I am </h1>
+            <button class="logo-button left" type="button" onclick="swapLogo(false)"> <b><|</b> </button>
+            <div class="logo-container">
+                <div class="logo" onclick="swapLogo(true)" data-index="0" data-status="selected"> <img src="./images/thielith/0.png" class="pixel"> </div>
+                <div class="logo" onclick="swapLogo(true)" data-index="1" data-status="null"> <img src="./images/thielith/1.png" class="pixel"> </div>
+                <div class="logo" onclick="swapLogo(true)" data-index="2" data-status="null"> <img src="./images/thielith/2.png"> </div>
+                <div class="logo" onclick="swapLogo(true)" data-index="3" data-status="null"> <img src="./images/thielith/3.png"> </div>
+                <div class="logo" onclick="swapLogo(true)" data-index="4" data-status="null"> <img src="./images/thielith/4.png" class="pixel"> </div>
+                <div class="logo" onclick="swapLogo(true)" data-index="5" data-status="null"> <p style="font-family: Roboto Mono;">Thielith</p> </div>
+                <div class="logo" onclick="swapLogo(true)" data-index="6" data-status="null"> <p style="font-family: Pixels;">Thielith</p> </div>
             </div>
-            <div class="subsection">
-                <h1>Hello! I am</h1>
-            </div>
-            <div class="slice big">
-                <div class="logo-arrows">
-                    <h1 onclick="swapLogo(false)"> < </h1>
-                    <h1 class="invis-txt">t</h1>
-                </div>
+            <button class="logo-button right" type="button" onclick="swapLogo(true)"> <b>|></b> </button>
+            <a target="_self" class="logo-button continue" href="#sliceTop"> <b>V</b> </a>
+        </div>
 
-                <div class="logo" onclick="swapLogo(true)">
-                    <h1 title="Logo" id="logoTxt" style="font-size:150px;display:none;">Thielith</h1>
-                    <img title="Logo" id="logoImg" src="./images/thielith/0.png" class="img-pxl">
-                </div>
+        <div class="spacer" id="sliceTop">
+            <p> spacer </p>
+        </div>
 
-                <div class="logo-arrows">
-                    <h1 class="invis-txt">t</h1>
-                    <h1 onclick="swapLogo(true)"> > </h1>
-                </div>
-            </div>
-            <!--<div class="subsection">
-                <h1>Welcome to my site!</h1>
-            </div>-->
-            <div class="subsection" id="target">
-                <a href="#target" style="text-decoration:none;"> <h1>v</h1> </a>
-            </div>
-
-            <!-- Slice: Greeting
-            <div class="slice small" style="background-color:royalblue;">
-                <div class="subsection">
-                    <h1>Hello! Welcome to my site.</h1>
-                </div>
-                <div class="subsection">
-                    <p>My online handle is Thielith and I'm an aspiring game developer.</p>
-                    <p>Hello! Welcome to my site.</p>
-                    <p>Hello! Welcome to my site.</p>
-                </div>
-            </div> -->
-
+        <div class="slice-container">
             <!-- Slice: Art -->
-            <div class="slice small" style="background-color: peru;">
-                <div class="subsection" style="width:95%">
-                    <div class="subsection text">
-                        <div>
-                            <h1>Art</h1>
-                            <p>
-                            I create art in a variety of styles using tools such as
-                            <a href="https://www.aseprite.org/">Aseprite</a>, <a href="https://www.blender.org/">Blender</a>,
-                            and <a href="https://inkscape.org/">Inkscape</a>.
-                            You can find more in my <a href="../art">Art Gallery</a>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="subsection image">
-                        <img height="300" src="../art/images/pixel/preview/mar10_block-hopper.png">
-                        <img height="300" src="../art/images/model/preview/pm_hammer.png">
-                        <img height="300" src="../art/images/vector/preview/providence-gup.jpg">
-                    </div>
+            <div class="slice" style="background-color:peru">
+                <div class="slice-content text">
+                    <h2>Art</h2>
+                    <p>
+                        I create art in a variety of styles using tools such as
+                        <a href="https://www.aseprite.org/">Aseprite</a>, <a href="https://www.blender.org/">Blender</a>,
+                        and <a href="https://inkscape.org/">Inkscape</a>.
+                        You can find more in my <a href="../art">Art Gallery</a>.
+                    </p>
+                </div>
+                <div class="slice-content image">
+                    <img src="../art/images/pixel/preview/mar10_block-hopper.png">
+                    <img src="../art/images/model/preview/pm_hammer.png">
+                    <img src="../art/images/vector/preview/providence-gup.jpg">
                 </div>
             </div>
-            
+
             <!-- Slice: Animations -->
-            <div class="slice small" style="background-color: cadetblue;">
-                <div class="subsection" style="width:95%">
-                    <div class="subsection text">
-                        <div>
-                            <h1>Animations</h1>
-                            <p>
-                            I create pixel art animations using <a href="https://www.aseprite.org/">Aseprite</a>.
-                            You can find more on my <a href="../art">Art Gallery</a>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="subsection image">
-                        <img height="247" src="../art/images/pixel/preview/PAD_2021_24x24_six.gif">
-                        <img height="247" src="../art/images/pixel/preview/rivals-of-aether_block-hopper-normals.gif">
+            <div class="slice" style="background-color:cadetblue">
+                <div class="slice-content text">
+                    <h2>Animations</h2>
+                    <p>
+                        I create pixel art animations using <a href="https://www.aseprite.org/">Aseprite</a>.
+                        You can find more on my <a href="../art">Art Gallery</a>.
+                    </p>
+                </div>
+                <div class="slice-content image">
+                    <img src="../art/images/pixel/preview/PAD_2021_24x24_six.gif">
+                    <img src="../art/images/pixel/preview/rivals-of-aether_block-hopper-normals.gif">
+                </div>
+            </div>
+
+            <!-- Slice: Videos -->
+            <div class="slice" style="background-color:darkslateblue">
+                <div class="slice-content text">
+                    <h2>Video Production</h2>
+                    <p>
+                        I am creating a video series on <a href="https://www.youtube.com/@Thielith">Youtube</a>
+                        using tools such as <a href="https://www.adobe.com/products/animate.html">Adobe Animate</a>,
+                        <a href="https://www.audacityteam.org/">Audacity</a>, and
+                        <a href="https://www.blackmagicdesign.com/products/davinciresolve/">Davinci Resolve</a>.<br>
+                        All video production is done by me.
+                    </p>
+                </div>
+                <div class="slice-content video">
+                    <div>
+                        <h3><u>Living in the Void</u></h3>
+                        <iframe src="https://www.youtube-nocookie.com/embed/CZ4AVh80Bio"
+                        title="YouTube video player" frameborder="0" allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                        </iframe>
                     </div>
                 </div>
             </div>
 
             <!-- Slice: Music -->
-            <!--<div class="slice small" style="background-color: seagreen;">
-                I create music.
-            </div>-->
-
-            <!-- Slice: Videos -->
-            <div class="slice small" style="background-color: darkslateblue;">
-                <div class="subsection" style="width:95%">
-                    <div class="subsection text">
-                        <div>
-                            <h1>Video Production</h1>
-                            <p>
-                            I am creating a video series on <a href="https://www.youtube.com/@Thielith">Youtube</a>
-                            using tools such as <a href="https://www.adobe.com/products/animate.html">Adobe Animate</a>,
-                            <a href="https://www.audacityteam.org/">Audacity</a>, and
-                            <a href="https://www.blackmagicdesign.com/products/davinciresolve/">Davinci Resolve</a>.<br>
-                            All video production is done by me.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="subsection video">
-                        <div class="video">
-                            <h1><u>Living in the Void</u></h1>
-                            <iframe
-                                src="https://www.youtube.com/embed/CZ4AVh80Bio" title="YouTube video player" frameborder="0"
-                                allow="picture-in-picture; web-share" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Slice: Games -->
-            <div class="slice small" style="background-color: maroon;">
-                I make games.
-            </div>
-
-            <!-- Socials -->
-            <div style="background-color:darkslateblue;">
-                <div class="socials">
-                    <div>
-                        <img class="socials-entry" src="./images/icons/ico-twitter.png"
-                             alt="Twitter Icon"
-                        >
-                        <a target="_blank" class="socials"
-                           href="https://www.twitter.com/Thi3lith">
-                        </a>
-                    </div>
-                    <div>
-                        <img class="socials-entry" src="./images/icons/ico-youtube.png"
-                             alt="Youtube Icon"
-                        >
-                        <a target="_blank" class="socials"
-                           href="https://www.youtube.com/@Thielith">
-                        </a>
-                    </div>
-                    <div>
-                        <img class="socials-entry" src="./images/icons/ico-newgrounds.png"
-                             alt="Newgrounds Icon"
-                        >
-                        <a target="_blank" class="socials"
-                           href="https://thielith.newgrounds.com">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <address>
-                Contact info: <br>
-                <a href="mailto:email@example.com">line1</a> <br>
-                line2 <br>
-                line3 <br>
-            </address>
-
-            <a class="a-page" href="#page-top"><p>< Return to Top ></p></a>
 
         </div>
 
+            <!-- Socials -->
+
+        <div id="top-shortcut">
+            <a target="_self" href="#"><span> < Return to Top > </span></a>
+        </div>
+
+        <!-- https://ionic.io -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html> 

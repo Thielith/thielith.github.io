@@ -1,0 +1,21 @@
+/* Default Overrides */
+html{
+	font-family: Roboto Mono;
+	color: white;
+	scroll-behavior: smooth;
+	background-color: black;
+
+	/*border: 1px solid red;*/
+}
+
+div:has(p){
+	background-color: green;
+}
+
+h1:has(p){
+	background-color: blue;
+}
+
+
+
+

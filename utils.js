@@ -10,16 +10,16 @@ const link = {
 
 const animation = {
     "fadeIn": [
-        { "opacity": 0, "zIndex": -1 },
-        { "opacity": 100, "zIndex": 2 }
+        { "opacity": 0, "zIndex": -1},
+        { "opacity": 100, "zIndex": 10}
     ],
     "slideFromLeft": [
         { "transform": "translateX(-50px)", "opacity": 0 },
-        { "transform": "translateX(-20px)", "opacity": 100 }
+        { "transform": "translateX(0)", "opacity": 100 }
     ],
     "slideFromRight": [
         { "transform": "translateX(50px)", "opacity": 0 },
-        { "transform": "translateX(20px)", "opacity": 100 }
+        { "transform": "translateX(0)", "opacity": 100 }
     ],
     "slideFromBottom": [
         { "transform": "translateY(50px)", "opacity": 0 },

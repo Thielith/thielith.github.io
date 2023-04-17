@@ -3,90 +3,91 @@
 <html lang="en-US">
     <head>
         <title>Thielith</title>
-        <script src="../utils.js"></script>
-        <script src="./images/files.js"></script>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="../utils.css">
         <script src="./index.js"></script>
-        <link rel="stylesheet" href="../home/index.css">
-        <link rel="stylesheet" href="index.css">
+        <script src="../utils.js"></script>
 
         <!-- Favicon -->
-        <link rel="icon" href="../home/images/icons/favicon.png">
+        <link rel="icon" href="../images/icons/favicon.png">
 
         <!-- External Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
-        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">-->
+
+        <base target="_blank">
     </head>
 
-    <body onload="startPage()">
-        <div id="page-top"></div>
-        <!-- Top Bar -->
-        <div class="top-nav">
-            <div style="width:var(--topNavHeight)"></div>
-            <a href="../home"><b>Home</b></a>
-            <a class="nav-active"><b>Art</b></a>
-            <a href=""><b>Page2</b></a>
-            <a href=""><b>Page3</b></a>
-            <a href=""><b>Page4</b></a>
+    <body>
+        <div id="page-top">
+            <div id="cache"></div>
         </div>
+
+        <!-- Header -->
+        <nav class="header">
+            <img class="icon" src="../images/icons/icon.png">
+            <div class="page-container">
+                <a target="_self" class="page" href="../home">Home</a><!--
+             --><a class="page active">Art</a><!--
+             --><!--<a target="_self" class="page" href="#">Page 2</a>-->
+            </div>
+
+            <div class="social-container">
+                <a href="https://www.youtube.com/channel/UCOWjHa8CAv14DSr_CKNfSjg"> <ion-icon name="logo-youtube"></ion-icon> </a>
+                <a href="https://www.twitter.com/Thi3lith"> <ion-icon name="logo-twitter"></ion-icon> </a>
+                <a href="https://cohost.org/thielith"> <ion-icon src="../images/icons/cohost.svg"></ion-icon> </a>
+                <a href="https://thielith.newgrounds.com/"> <ion-icon src="../images/icons/newgrounds.svg"></ion-icon> </a>
+            </div>
+        </nav>
 
         <!-- Image Details Pop-up -->
-        <div id="overlay" class="imageDetailsOverlay" onclick="hideOverlay()">
-            <div class="imageDetailsWindow">
-                <div id="overlayImage" class="image">
-                    <img id="imageDetailsImage" src="./images/vector/gup_suit.png">
+        <div id="art-details-popup" class="cover-full-page" onclick="hidePopup()">
+            <div id="art-details-container">
+                <div id="image-container">
+                    <img id="image" src="./images/vector/gup_suit.png">
                 </div>
 
-                <div><p class="invis-txt">e</p></div>
+                <div style="width:5ch"></div>
 
-                <div id="overlayText" class="text">
-                    <u><h1 id="imageDetailsTitle"> Title: Test </h1></u>
-                    <p id="imageDetailsDate"> Date: 00/00/0000 </p>
-                    <p id="imageDetailsTool"> Tool: Test </p>
-                    <p id="imageDetailsTime"> Time: Test </p> <hr>
-                    <p id="imageDetailsDescription"> Description time for eggs benedict. </p>
+                <div id="text-container">
+                    <u><h2 id="title"> Title: Test </h2></u>
+                    <p id="date"> Date: 00/00/0000 </p>
+                    <p id="tool"> Tool: Test </p>
+                    <p id="time"> Time: Test </p> <hr>
+                    <p id="description"> Description time for eggs benedict. </p>
                 </div>
             </div>
         </div>
 
-        <!-- Page Content -->
-        <div class="page-content">
-
-            <!-- Title -->
-            <div class="slice">
-                <div>
-                    <h1 style="font-size:100px"> Art Gallery </h1>
-                </div>
-            </div>
-
-            <!-- Gallery Category Chooser -->
-            <div class="menu">
-                <button id="menuButton" class="menuButton"> Medium: Any </button>
-                <div class="menuContent">
-                    <a onclick="setGalleryImages('any')"> Any </a>
-                    <a onclick="setGalleryImages('pixel')"> Pixel Art </a>
-                    <a onclick="setGalleryImages('vector')"> Vector </a>
-                    <a onclick="setGalleryImages('model')"> 3D Model </a>
-                    <a class="menuLastEntry" onclick="setGalleryImages('animation')"> Animation </a>
-                </div>
-            </div>
-
-            <!-- Gallery [loadImages()] -->
-            <div class="slice" style="background-color: peru;">
-                <div id="gallery" class="slice" style="max-width:95%">
-                </div>
-            </div>
-
-            <address>
-                Contact info: <br>
-                <a href="./content/art.html">line1</a> <br>
-                line2 <br>
-                line3 <br>
-            </address>
-
-            <a class="a-page" href="#page-top"><p>< Return to Top ></p></a>
-
+        <!-- Greeting Text -->
+        <div class="title-slice">
+            <h1>Art Gallery</h1>
         </div>
 
+        <!-- Art Type Settings -->
+        <div class="category-container">
+            <button id="category-button"> Medium: Any </button>
+            <div class="categories">
+                <label>
+                    <input type="checkbox" data-type="fanart" onchange="disableEntries(this)"> Disable Fanart
+                </label>
+                <a onclick="setGalleryImages('any')"> Any </a>
+                <a onclick="setGalleryImages('pixel')"> Pixel Art </a>
+                <a onclick="setGalleryImages('vector')"> Vector </a>
+                <a onclick="setGalleryImages('model')"> 3D Model </a>
+                <a class="lastEntry" onclick="setGalleryImages('animation')"> Animation </a>
+            </div>
+        </div>
+
+        <div id="gallery">
+        </div>
+
+        <div id="top-shortcut">
+            <a href="#"><span> < Return to Top > </span></a>
+        </div>
+
+        <!-- https://ionic.io -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html>

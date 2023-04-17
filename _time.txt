@@ -10,3 +10,9 @@ mar 30: 3 hours 55 minutes
 mar 31: 3 hours 35 minutes
 apr 1: 3 hours 50 minutes
 apr 8: 2 hours
+apr 9: 1 hour 45 minutes
+apr 10: 3 hours 35 minutes
+apr 11: 4 hours 20 minutes
+apr 14: 5 hours 10 minutes
+apr 15: 3 hours 45 minutes
+apr 16: 3 hours 40 minutes
