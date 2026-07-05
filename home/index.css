@@ -159,8 +159,6 @@ h1{
 	/*border: 3px solid blue;*/
 }
 .slice-content.image{
-	height: 100%;
-
 	display: flex;
 	/*flex-direction: row;*/
 	flex-wrap: wrap;

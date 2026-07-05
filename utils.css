@@ -78,7 +78,7 @@ p{
 	/* idk why but headerHeight works fine in other contexts except the line below.  subtracting by TB makes it fit correctly */
 	height: calc(100svh - var(--headerHeightAlt));
 	width: 100%;
-	margin-top: var(--headerHeight);
+ 	margin-top: var(--headerHeight);
 }
 
 
@@ -101,6 +101,7 @@ p{
 .icon{
 	height: var(--headerHeightAlt);
 	padding-left: var(--headerContentPaddingLR);
+	align-self: center;
 }
 .page-container{
 	margin: 0;

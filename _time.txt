@@ -16,3 +16,27 @@ apr 11: 4 hours 20 minutes
 apr 14: 5 hours 10 minutes
 apr 15: 3 hours 45 minutes
 apr 16: 3 hours 40 minutes
+
+made header position sticky instead of fixed
+todo:
+    make big text use Pixels font
+    support for bigger resolutions
+    support for mobile resolutions
+    make return to top button one of those circle buttons that follows you as you scroll
+    reduce drop shadow blur by small amount
+    header:
+        make logo go to home page
+        make header bigger
+    art tab:
+        sort by date function
+    home tab:
+        delay between being able to swap logo
+        make Pixels text version of logo the first one
+        make V button more obvious that its clickable
+        make slices their own "page" instead of just a slice
+        sort slices by priority
+        make images on art slice lead directly to art page with details of it already up
+        make slice headers go to appropriate pages and features
+    remove borders on art gallery pieces
+    weird bug where if you click anywhere outside the art gallery container it plays the fades away animation again
+    return to top button opens new tab
