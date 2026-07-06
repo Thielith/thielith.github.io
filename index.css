@@ -1,0 +1,74 @@
+:root{
+	--darkBgColor: #1b1f21;
+	--logoRotation: -45deg;
+}
+
+body{
+	color: white;
+	background-color: var(--darkBgColor);
+	margin: 0;
+}
+
+#bg{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+
+#bgRows{
+	width: 100vw;
+	height: 100vh;
+	transform-origin: left;
+	rotate: -45deg;
+	opacity: 20%;
+}
+
+.bg-row{
+	display: flex;
+	width: fit-content;
+	padding: 5px 0;
+}
+
+.bg-row img{
+	height: 30px;
+	padding: 0 5px;
+	user-select: none;
+	pointer-events: none;
+}
+
+.scroll-left{
+	animation: scrolling-left 100.0s linear infinite
+}
+.scroll-right{
+	animation: scrolling-right 100.0s linear infinite
+}
+@keyframes scrolling-left{
+	0%{
+		translate: -40%;
+	}
+	100%{
+		translate: -60%; /* 2/5 */
+	}
+}
+@keyframes scrolling-right{
+	0%{
+		translate: -40%;
+	}
+	100%{
+		translate: -20%;
+	}
+}
+
+
+
+
+
+#content{
+	width: 100vw;
+	height: 100vh;
+}
