@@ -1,6 +1,6 @@
 :root{
 	--darkBgColor: #1b1f21;
-	--logoRotation: -45deg;
+	--logoRotation: -15deg;
 }
 
 body{
@@ -9,58 +9,60 @@ body{
 	margin: 0;
 }
 
+
+
 #bg{
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	background-color: black;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100vh;
 	z-index: -10;
+	overflow: hidden;
+	background-color: black;
+	filter: blur(3px);
 }
 
 #bgRows{
-	width: 100vw;
-	height: 100vh;
-	transform-origin: left;
-	rotate: -45deg;
+	transform-origin: left top;
+	translate: 0% 0%;
+	rotate: var(--logoRotation);
 	opacity: 20%;
 }
 
 .bg-row{
 	display: flex;
-	width: fit-content;
-	padding: 5px 0;
+	width: 200%;
+	padding-bottom: 1vh;
 }
 
-.bg-row img{
-	height: 30px;
-	padding: 0 5px;
+.bg-row-content{
+	display: flex;
+	gap: 1vh;
+	padding-right: 1vh;
+	animation: scroll-left 100.0s linear infinite;
+}
+
+.bg-row-content img{
+	height: 3vh;
 	user-select: none;
 	pointer-events: none;
 }
 
-.scroll-left{
-	animation: scrolling-left 100.0s linear infinite
-}
-.scroll-right{
-	animation: scrolling-right 100.0s linear infinite
-}
-@keyframes scrolling-left{
-	0%{
-		translate: -40%;
+@keyframes scroll-left{
+	from{
+		translate: -33.33333333333333%;
 	}
-	100%{
-		translate: -60%; /* 2/5 */
+	to{
+		translate: -66.66666666666667%;
 	}
 }
-@keyframes scrolling-right{
-	0%{
-		translate: -40%;
+@keyframes scroll-right{
+	from{
+		translate: -66.66666666666667%;
 	}
-	100%{
-		translate: -20%;
+	to{
+		translate: -33.33333333333333%;
 	}
 }
 
@@ -68,7 +70,6 @@ body{
 
 
 
-#content{
-	width: 100vw;
+#topArea{
 	height: 100vh;
 }

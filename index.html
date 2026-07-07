@@ -7,7 +7,7 @@
   </head>
   
   <body onload="initialize()">
-    <div id="logos" class="hidden">
+    <div aria-hidden="true" id="logos" class="hidden">
       <img src="./images/thielith/_base.png" class="pixel">
       <img src="./images/thielith/minecraft.png">
       <img src="./images/thielith/deltarune.png" class="pixel">
@@ -25,11 +25,16 @@
       <img src="./images/thielith/undertale-frosted.png" class="pixel">
     </div>
 
-    <div id="content" class="center">
-      <img src="images/wip.png" style="width:15%" class="pixel">
+    <div id="content">
+      <div id="topArea">
+        <div class="center">
+          <img src="images/wip.png" style="width:15%" class="pixel">
+        </div>
+      </div>
+
     </div>
 
-    <div id="bg">
+    <div aria-hidden id="bg">
       <div id="bgRows"></div>
     </div>
 

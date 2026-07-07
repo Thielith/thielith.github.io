@@ -1,40 +1,46 @@
 
+let numLogos = 0;
+const numBgRows = 40;
+
 function initialize(){
-	for(let i=0; i<31*2; i++){
-		addBackgroundRowSet(i);
-		i += 1;
+	numLogos = logos.childElementCount;
+	for(let i=0; i<numBgRows; i++){
+		bgRows.appendChild(createBgRow(i));
 	}
 }
 
-function addBackgroundRowSet(iteration){
-	const left = addBackgroundRow(true);
-	const right = addBackgroundRow(false);
-
-	left.style.translate = -(0 + iteration*1.5) + "%";
-	right.style.translate = -(20 + iteration*4) + "%";
-}
-
-function addBackgroundRow(goingLeft){
-	const rowHolder = document.createElement("div");
-	bgRows.appendChild(rowHolder);
-	
+function createBgRow(logoIndexOffset = 0){
 	const row = document.createElement("div");
-	row.className = "bg-row";
-	rowHolder.appendChild(row);
+	row.classList.add("bg-row");
+	const content1 = createBgRowContent(logoIndexOffset);
+	const content2 = createBgRowContent(logoIndexOffset);
+	// const content3 = createBgRowContent(logoIndexOffset);
+	// const content4 = createBgRowContent(logoIndexOffset);
+	// const content5 = createBgRowContent(logoIndexOffset);
+	row.appendChild(content1);
+	row.appendChild(content2);
+	// row.appendChild(content3);
+	// row.appendChild(content4);
+	// row.appendChild(content5);
 
-	for(let j=0; j<5; j++){
-		for(let i=0; i<logos.childElementCount; i++){
-			const clone = logos.children[i].cloneNode(false);
-			row.appendChild(clone);
-		}
+	if(logoIndexOffset % 2 == 1){
+		content1.style.animationName = "scroll-right";
+		content2.style.animationName = "scroll-right";
+		// content3.style.animationName = "scroll-right";
+		// content4.style.animationName = "scroll-right";
+		// content5.style.animationName = "scroll-right";
+	}
+	return row;
+}
+
+function createBgRowContent(logoIndexOffset = 0){
+	const content = document.createElement("div");
+	content.classList.add("bg-row-content");
+
+	for(let i=0; i<numLogos*3; i++){
+		const clone = logos.children[(i + logoIndexOffset) % numLogos].cloneNode(false);
+		content.appendChild(clone);
 	}
 
-	if(goingLeft){
-		row.classList.add("scroll-left");
-	}
-	else{
-		row.classList.add("scroll-right");
-	}
-
-	return rowHolder;
+	return content;
 }
