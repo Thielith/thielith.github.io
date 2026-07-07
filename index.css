@@ -71,5 +71,28 @@ body{
 
 
 #topArea{
+	display: grid;
 	height: 100vh;
+
+	grid-template-rows: 33% 33% 33%;
+}
+
+#topAreaContinue{
+	align-self:flex-end;
+	text-align: center;
+	font-size: 5rem;
+
+	animation: bob-sin 1.0s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@keyframes bob-sin {
+	0%{
+		translate: 0 -0.1em;
+	}
+	50%{
+		translate: 0 0.1em;
+	}
+	100%{
+		translate: 0 -0.1em;
+	}
 }
