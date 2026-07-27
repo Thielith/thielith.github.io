@@ -3,6 +3,7 @@
 }
 .invisible{
 	opacity: 0;
+	pointer-events: none;
 }
 .hidden{
 	display: none;
@@ -12,6 +13,7 @@
 	align-content: center;
 	text-align: center;
 	vertical-align: middle;
+	justify-content: center;
 }
 .full_screen{
 	height: 100%;
