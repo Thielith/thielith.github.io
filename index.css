@@ -1,10 +1,17 @@
 :root{
 	--darkBgColor: #1b1f21;
 	--logoRotation: -15deg;
+
+	--outline-size-1: 5px;
+	--outline-size-2: 5px;
+	--outline-color-1: black;
+	--outline-color-2: white;
+	--outline: drop-shadow(0 var(--outline-size-1) 0 var(--outline-color-1)) drop-shadow(0 calc(var(--outline-size-1) * -1) 0 var(--outline-color-1)) drop-shadow(var(--outline-size-1) 0 0 var(--outline-color-1)) drop-shadow(calc(var(--outline-size-1) * -1) 0 0 var(--outline-color-1)) drop-shadow(0 var(--outline-size-2) 0 var(--outline-color-2)) drop-shadow(0 calc(var(--outline-size-2) * -1) 0 var(--outline-color-2)) drop-shadow(var(--outline-size-2) 0 0 var(--outline-color-2)) drop-shadow(calc(var(--outline-size-2) * -1) 0 0 var(--outline-color-2));
 }
 
 *{
 	margin: auto;
+	font-family: 'Bombardier';
 }
 
 body{
@@ -28,8 +35,8 @@ body{
 }
 
 #bgRows{
-	transform-origin: left top;
-	translate: 0% 0%;
+	transform-origin: center;
+	translate: 0% -18%;
 	rotate: var(--logoRotation);
 	opacity: 20%;
 }
@@ -87,31 +94,66 @@ body{
 
 	/* background-color: cyan; */
 }
+#topArea div{
+	width: 85%;
+
+	/* background-color: gray; */
+}
 #topArea img{
-	width: min(800px, 85%);
+	width: min(800px, 100%);
 
 	/* background-color: gray; */
 }
 #topAreaText{
 	font-size: 60px;
-	margin: auto;
+	margin-top: 1rem;
 
 	/* background-color: azure; */
 }
 #topArea .socials{
 	display: flex;
+	margin-top: 3em;
+	width: fit-content;
+
+	border: 10px solid gray;
+	border-radius: 20px;
+	background-color: black;
+	padding: 30px 20px 20px 20px;
+	gap: 20px;
+	filter: drop-shadow(0 -15px 0 rgb(63, 63, 63));
 }
 #topArea .socials a{
 	font-size: 1.5em;
+	/* padding: 30px 20px 20px 20px; */
+}
+#topArea .socials a{
+	filter: drop-shadow(0 -10px 0 gray);
+}
+#topArea .socials a:hover, #topArea .socials a:focus{
+	filter: drop-shadow(0 -10px 0 lightblue);
+	/* outline: none; */
+}
+#topArea .socials a:active{
+	filter: none;
+	margin-top: -5px;
+	margin-bottom: 5px;
+	filter: drop-shadow(0 -5px 0 lightblue);
 }
 
 .socials{
 }
 .socials a{
+	display: block;
+
+	align-items: center;
+	text-align: center;
 	
+	/* background-color: purple; */
 }
 .socials img{
 	height: 5rem;
+
+	/* filter: var(--outline); */
 }
 
 #topAreaContinue{
@@ -119,7 +161,12 @@ body{
 	font-size: 5rem;
 	animation: bob-sin 10.0s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 	
-	/* background-color: red; */
+	border: 10px solid gray;
+	border-radius: 20px;
+	background-color: black;
+	padding: 0 0.125em;
+	translate: 0 -0.5em;
+	background-color: black;
 }
 
 @keyframes bob-sin {
