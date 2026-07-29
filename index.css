@@ -2,11 +2,37 @@
 	--darkBgColor: #1b1f21;
 	--logoRotation: -15deg;
 
-	--outline-size-1: 5px;
-	--outline-size-2: 5px;
+	--topArea-textSize: 60px;
+
+	--topArea-socialBarBorder: 10px solid gray;
+	--topArea-socialBarBorderRadius: 20px;
+	--topArea-socialBarBackground: black;
+	--topArea-socialBarPadding: 30px 20px 20px 20px;
+	--topArea-socialBarGap: 20px;
+	--topArea-socialBarExtrude: -15px;
+	--topArea-socialBarExtrudeColor: rgb(63, 63, 63);
+
+	--topArea-socialExtrude: -10px;
+	--topArea-socialExtrudeActiveOffset: 5px;
+	--topArea-socialExtrudeColor: gray;
+	--topArea-socialExtrudeColorFocus: lightblue;
+	--topArea-socialExtrudeColorActive: lightblue;
+
+	--socialHeight: 5rem;
+
+	--outline-size-1: 1px;
+	--outline-size-2: 1px;
 	--outline-color-1: black;
 	--outline-color-2: white;
-	--outline: drop-shadow(0 var(--outline-size-1) 0 var(--outline-color-1)) drop-shadow(0 calc(var(--outline-size-1) * -1) 0 var(--outline-color-1)) drop-shadow(var(--outline-size-1) 0 0 var(--outline-color-1)) drop-shadow(calc(var(--outline-size-1) * -1) 0 0 var(--outline-color-1)) drop-shadow(0 var(--outline-size-2) 0 var(--outline-color-2)) drop-shadow(0 calc(var(--outline-size-2) * -1) 0 var(--outline-color-2)) drop-shadow(var(--outline-size-2) 0 0 var(--outline-color-2)) drop-shadow(calc(var(--outline-size-2) * -1) 0 0 var(--outline-color-2));
+	--outline-1:	drop-shadow(0 var(--outline-size-1) 0 var(--outline-color-1))
+					drop-shadow(0 calc(var(--outline-size-1) * -1) 0 var(--outline-color-1))
+					drop-shadow(var(--outline-size-1) 0 0 var(--outline-color-1))
+					drop-shadow(calc(var(--outline-size-1) * -1) 0 0 var(--outline-color-1));
+	
+	--outline-2:	drop-shadow(0 var(--outline-size-2) 0 var(--outline-color-2))
+					drop-shadow(0 calc(var(--outline-size-2) * -1) 0 var(--outline-color-2))
+					drop-shadow(var(--outline-size-2) 0 0 var(--outline-color-2))
+					drop-shadow(calc(var(--outline-size-2) * -1) 0 0 var(--outline-color-2));
 }
 
 *{
@@ -105,7 +131,7 @@ body{
 	/* background-color: gray; */
 }
 #topAreaText{
-	font-size: 60px;
+	font-size: var(--topArea-textSize);
 	margin-top: 1rem;
 
 	/* background-color: azure; */
@@ -115,29 +141,28 @@ body{
 	margin-top: 3em;
 	width: fit-content;
 
-	border: 10px solid gray;
-	border-radius: 20px;
-	background-color: black;
-	padding: 30px 20px 20px 20px;
-	gap: 20px;
-	filter: drop-shadow(0 -15px 0 rgb(63, 63, 63));
+	border: var(--topArea-socialBarBorder);
+	border-radius: var(--topArea-socialBarBorderRadius);
+	background-color: var(--topArea-socialBarBackground);
+	padding: var(--topArea-socialBarPadding);
+	gap: var(--topArea-socialBarGap);
+	filter: drop-shadow(0 var(--topArea-socialBarExtrude) 0 var(--topArea-socialBarExtrudeColor));
+}
+#topArea .socials a:focus{
+	outline: medium solid lightblue;
 }
 #topArea .socials a{
-	font-size: 1.5em;
-	/* padding: 30px 20px 20px 20px; */
-}
-#topArea .socials a{
-	filter: drop-shadow(0 -10px 0 gray);
+	filter: drop-shadow(0 var(--topArea-socialExtrude) 0 var(--topArea-socialExtrudeColor));
 }
 #topArea .socials a:hover, #topArea .socials a:focus{
-	filter: drop-shadow(0 -10px 0 lightblue);
+	filter: drop-shadow(0 var(--topArea-socialExtrude) 0 var(--topArea-socialExtrudeColorFocus));
 	/* outline: none; */
 }
 #topArea .socials a:active{
-	filter: none;
-	margin-top: -5px;
-	margin-bottom: 5px;
-	filter: drop-shadow(0 -5px 0 lightblue);
+	outline: none;
+	margin-top: calc(-1 * var(--topArea-socialExtrudeActiveOffset));
+	margin-bottom: var(--topArea-socialExtrudeActiveOffset);
+	filter: drop-shadow(0 calc(var(--topArea-socialExtrude) + var(--topArea-socialExtrudeActiveOffset)) 0 var(--topArea-socialExtrudeColorActive));
 }
 
 .socials{
@@ -151,7 +176,7 @@ body{
 	/* background-color: purple; */
 }
 .socials img{
-	height: 5rem;
+	height: var(--socialHeight);
 
 	/* filter: var(--outline); */
 }
