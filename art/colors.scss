@@ -1,0 +1,110 @@
+color-palette.thielith pal-content{
+	pal-row:nth-child(2){
+		color-swatch:nth-child(1){background-color: #fbc762}
+		color-swatch:nth-child(2){background-color: #2a2a2a}
+		color-swatch:nth-child(3){background-color: #3f3f3f}
+		color-swatch:nth-child(4){background-color: #002c94}
+		color-swatch:nth-child(5){background-color: #ffffff}
+	}
+	pal-row:nth-child(4){
+		color-swatch:nth-child(1){background-color: #f7a62d}
+		color-swatch:nth-child(2){background-color: #212121}
+		color-swatch:nth-child(3){background-color: #383838}
+		color-swatch:nth-child(4){background-color: #06168f}
+		color-swatch:nth-child(5){background-color: #bcdce6}
+	}
+	pal-row:nth-child(6){
+		color-swatch:nth-child(1){background-color: #0aa3a8}
+		color-swatch:nth-child(2){background-color: #000000}
+	}
+}
+
+color-palette.steel pal-content{
+	pal-row:nth-child(2){
+		color-swatch:nth-child(1){background-color: #90a6b0}
+	}
+}
+
+color-palette.other pal-content{
+	pal-row:nth-child(2){
+		color-swatch:nth-child(1){background-color: #85ced6}
+		color-swatch:nth-child(2){background-color: #0cc8cf}
+		color-swatch:nth-child(3){background-color: #0aa3a8}
+		color-swatch:nth-child(4){background-color: #098d94}
+		color-swatch:nth-child(5){background-color: #087482}
+		color-swatch:nth-child(6){background-color: #076473}
+		color-swatch:nth-child(7){background-color: #064e5e}
+	}
+	pal-row:nth-child(4){
+		color-swatch:nth-child(1){background-color: #fae4b9}
+		color-swatch:nth-child(2){background-color: #fad07d}
+		color-swatch:nth-child(3){background-color: #fbc762}
+		color-swatch:nth-child(4){background-color: #f7a62d}
+		color-swatch:nth-child(5){background-color: #d48713}
+		color-swatch:nth-child(6){background-color: #b5610d}
+	}
+	pal-row:nth-child(6){
+		color-swatch:nth-child(1){background-color: #4d4d4d}
+		color-swatch:nth-child(2){background-color: #3f3f3f}
+		color-swatch:nth-child(3){background-color: #383838}
+		color-swatch:nth-child(4){background-color: #2a2a2a}
+		color-swatch:nth-child(5){background-color: #212121}
+		color-swatch:nth-child(6){background-color: #1b1b1b}
+		color-swatch:nth-child(7){background-color: #151515}
+	}
+	pal-row:nth-child(8){
+		color-swatch:nth-child(1){background-color: #1052a3}
+		color-swatch:nth-child(2){background-color: #002c94}
+		color-swatch:nth-child(3){background-color: #06168f}
+		color-swatch:nth-child(4){background-color: #001670}
+		color-swatch:nth-child(5){background-color: #040761}
+		color-swatch:nth-child(6){background-color: #000145}
+	}
+	pal-row:nth-child(10){
+		color-swatch:nth-child(1){background-color: #ffffff}
+		color-swatch:nth-child(2){background-color: #d5e8ed}
+		color-swatch:nth-child(3){background-color: #bcdce6}
+		color-swatch:nth-child(4){background-color: #a0ccd9}
+		color-swatch:nth-child(5){background-color: #87b6c4}
+		color-swatch:nth-child(6){background-color: #6d99b3}
+		color-swatch:nth-child(7){background-color: #557da3}
+		color-swatch:nth-child(8){background-color: #376794}
+	}
+	pal-row:nth-child(12){
+		color-swatch:nth-child(1){background-color: #ad00ff}
+		color-swatch:nth-child(2){background-color: #8d03d0}
+		color-swatch:nth-child(3){background-color: #420763}
+		color-swatch:nth-child(4){background-color: #27043a}
+	}
+	pal-row:nth-child(14){
+		color-swatch:nth-child(1){background-color: #d1cad9}
+		color-swatch:nth-child(2){background-color: #afa3bd}
+		color-swatch:nth-child(3){background-color: #797089}
+		color-swatch:nth-child(4){background-color: #443e56}
+		color-swatch:nth-child(5){background-color: #292634}
+		color-swatch:nth-child(6){background-color: #1b1a23}
+		color-swatch:nth-child(7){background-color: #15151f}
+		color-swatch:nth-child(8){background-color: #111117}
+		color-swatch:nth-child(9){background-color: #0c0c12}
+	}
+	pal-row:nth-child(16){
+		color-swatch:nth-child(1){background-color: #f3fdfd}
+		color-swatch:nth-child(2){background-color: #c2cccc}
+		color-swatch:nth-child(3){background-color: #919899}
+		color-swatch:nth-child(4){background-color: #505a5a}
+	}
+	pal-row:nth-child(18){
+		color-swatch:nth-child(1){background-color: #90a6b0}
+		color-swatch:nth-child(2){background-color: #6b7b82}
+		color-swatch:nth-child(3){background-color: #495459}
+		color-swatch:nth-child(4){background-color: #2a3033}
+		color-swatch:nth-child(5){background-color: #1b1f21}
+		color-swatch:nth-child(6){background-color: #101314}
+		color-swatch:nth-child(7){background-color: #0a0c0d}
+	}
+}
+
+
+color-swatch{
+	background-color: none;
+}

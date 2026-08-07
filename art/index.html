@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="colors.css">
+		<link rel="stylesheet" href="../utils.css">
+		<script src="index.js"></script>
+	</head>
+	
+	<body onload="initialize();">
+		<label>Color label display mode:</label>
+		<select name="color-label-mode" id="colorLabelSelector" onchange="updateColorLabelMode();">
+			<option value="none">None</option>
+			<option value="hex">HEX</option>
+			<option value="hsv">HSV</option>
+			<option value="rgb">RGB</option>
+		</select>
+
+		<color-palette class="thielith">
+			<a href="./palettes/thielith.png" download="palette_thielith.png" target="_blank">
+				<h3>Thielith</h3>
+			</a>
+			<pal-content>
+				<p>Base:</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#fbc762</hex>
+						<hsv>43 61 98</hsv>
+						<rgb>251 199 98</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#2a2a2a</hex>
+						<hsv>0 0 16</hsv>
+						<rgb>42 42 42</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#3f3f3f</hex>
+						<hsv>0 0 25</hsv>
+						<rgb>63 63 63</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#002c94</hex>
+						<hsv>222 100 58</hsv>
+						<rgb>0 44 148</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#ffffff</hex>
+						<hsv>0 0 100</hsv>
+						<rgb>255 255 255</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Shade:</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#f7a62d</hex>
+						<hsv>36 82 97</hsv>
+						<rgb>247 166 45</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#212121</hex>
+						<hsv>0 0 13</hsv>
+						<rgb>33 33 33</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#383838</hex>
+						<hsv>0 0 22</hsv>
+						<rgb>56 56 56</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#06168f</hex>
+						<hsv>233 96 56</hsv>
+						<rgb>6 22 143</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#bcdce6</hex>
+						<hsv>194 18 90</hsv>
+						<rgb>188 220 230</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Misc.</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#0aa3a8</hex>
+						<hsv>182 94 66</hsv>
+						<rgb>10 163 168</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#000000</hex>
+						<hsv>0 0 0</hsv>
+						<rgb>0 0 0</rgb>
+					</color-swatch>
+				</pal-row>
+			</pal-content>
+		</color-palette>
+
+		
+		<color-palette class="other">
+			<a href="./palettes/other.png" download="palette_other.png" target="_blank">
+				<h3>Other</h3>
+			</a>
+			<pal-content>
+				<p>Cyan-ish</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#85ced6</hex>
+						<hsv>186 38 84</hsv>
+						<rgb>133 206 214</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#0cc8cf</hex>
+						<hsv>182 94 81</hsv>
+						<rgb>12 200 207</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#0aa3a8</hex>
+						<hsv>182 94 66</hsv>
+						<rgb>10 163 168</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#098d94</hex>
+						<hsv>183 94 58</hsv>
+						<rgb>9 141 148</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#087482</hex>
+						<hsv>187 94 51</hsv>
+						<rgb>8 116 130</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#076473</hex>
+						<hsv>188 94 45</hsv>
+						<rgb>7 100 115</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#064e5e</hex>
+						<hsv>191 94 37</hsv>
+						<rgb>6 78 94</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Gold-ish</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#fae4b9</hex>
+						<hsv>40 26 98</hsv>
+						<rgb>250 228 185</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#fad07d</hex>
+						<hsv>40 50 98</hsv>
+						<rgb>250 208 125</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#fbc762</hex>
+						<hsv>40 61 98</hsv>
+						<rgb>251 199 98</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#f7a62d</hex>
+						<hsv>36 82 97</hsv>
+						<rgb>247 166 45</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#d48713</hex>
+						<hsv>36 91 83</hsv>
+						<rgb>212 135 19</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#b5610d</hex>
+						<hsv>30 93 71</hsv>
+						<rgb>181 97 13</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Grays</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#4d4d4d</hex>
+						<hsv>0 0 30</hsv>
+						<rgb>77 77 77</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#3f3f3f</hex>
+						<hsv>0 0 25</hsv>
+						<rgb>63 63 63</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#383838</hex>
+						<hsv>0 0 22</hsv>
+						<rgb>56 56 56</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#2a2a2a</hex>
+						<hsv>0 0 16</hsv>
+						<rgb>42 42 42</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#212121</hex>
+						<hsv>0 0 13</hsv>
+						<rgb>33 33 33</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#1b1b1b</hex>
+						<hsv>0 0 11</hsv>
+						<rgb>27 27 27</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#151515</hex>
+						<hsv>0 0 8</hsv>
+						<rgb>21 21 21</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Dark Blue</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#1052a3</hex>
+						<hsv>213 90 64</hsv>
+						<rgb>16 82 163</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#002c94</hex>
+						<hsv>222 100 58</hsv>
+						<rgb>0 44 148</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#06168f</hex>
+						<hsv>233 96 56</hsv>
+						<rgb>6 22 143</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#001670</hex>
+						<hsv>228 100 44</hsv>
+						<rgb>0 22 112</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#040761</hex>
+						<hsv>238 96 38</hsv>
+						<rgb>4 7 97</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#000145</hex>
+						<hsv>239 100 27</hsv>
+						<rgb>0 1 69</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>White w/ Hue</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#ffffff</hex>
+						<hsv>0 0 100</hsv>
+						<rgb>255 255 255</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#d5e8ed</hex>
+						<hsv>193 10 93</hsv>
+						<rgb>213 232 237</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#bcdce6</hex>
+						<hsv>194 18 90</hsv>
+						<rgb>188 220 230</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#a0ccd9</hex>
+						<hsv>194 26 85</hsv>
+						<rgb>160 204 217</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#87b6c4</hex>
+						<hsv>194 31 77</hsv>
+						<rgb>135 182 196</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#6d99b3</hex>
+						<hsv>202 39 70</hsv>
+						<rgb>109 153 179</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#557da3</hex>
+						<hsv>209 48 64</hsv>
+						<rgb>85 125 163</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#376794</hex>
+						<hsv>209 63 58</hsv>
+						<rgb>55 103 148</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Purple Blast</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#ad00ff</hex>
+						<hsv>281 100 100</hsv>
+						<rgb>173 0 255</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#8d03d0</hex>
+						<hsv>280 99 82</hsv>
+						<rgb>141 3 208</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#420763</hex>
+						<hsv>278 93 39</hsv>
+						<rgb>66 7 99</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#27043a</hex>
+						<hsv>279 93 23</hsv>
+						<rgb>39 4 58</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Onyx</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#d1cad9</hex>
+						<hsv>268 7 85</hsv>
+						<rgb>209 202 217</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#afa3bd</hex>
+						<hsv>268 13 74</hsv>
+						<rgb>175 163 189</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#797089</hex>
+						<hsv>262 18 54</hsv>
+						<rgb>121 112 137</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#443e56</hex>
+						<hsv>255 28 34</hsv>
+						<rgb>68 62 86</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#292634</hex>
+						<hsv>253 27 20</hsv>
+						<rgb>41 38 52</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#1b1a23</hex>
+						<hsv>247 26 14</hsv>
+						<rgb>27 26 35</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#15151f</hex>
+						<hsv>240 32 12</hsv>
+						<rgb>21 21 31</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#111117</hex>
+						<hsv>240 26 9</hsv>
+						<rgb>17 17 23</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#0c0c12</hex>
+						<hsv>240 33 7</hsv>
+						<rgb>12 12 18</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Off-white</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#f3fdfd</hex>
+						<hsv>180 4 99</hsv>
+						<rgb>243 253 253</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#c2cccc</hex>
+						<hsv>180 5 80</hsv>
+						<rgb>194 204 204</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#919899</hex>
+						<hsv>188 5 60</hsv>
+						<rgb>145 152 153</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#505a5a</hex>
+						<hsv>180 12 35</hsv>
+						<rgb>80 90 90</rgb>
+					</color-swatch>
+				</pal-row>
+
+				<p>Steel</p>
+				<pal-row>
+					<color-swatch>
+						<hex>#90a6b0</hex>
+						<hsv>199 18 69</hsv>
+						<rgb>144 166 176</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#6b7b82</hex>
+						<hsv>198 18 51</hsv>
+						<rgb>107 123 130</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#495459</hex>
+						<hsv>199 18 35</hsv>
+						<rgb>73 84 89</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#2a3033</hex>
+						<hsv>200 18 20</hsv>
+						<rgb>42 48 51</rgb>
+					</color-swatch>
+					<color-swatch class="notable">
+						<hex>#1b1f21</hex>
+						<hsv>200 19 13</hsv>
+						<rgb>27 31 33</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#101314</hex>
+						<hsv>200 20 8</hsv>
+						<rgb>16 19 20</rgb>
+					</color-swatch>
+					<color-swatch>
+						<hex>#0a0c0d</hex>
+						<hsv>200 23 5</hsv>
+						<rgb>10 12 13</rgb>
+					</color-swatch>
+				</pal-row>
+			</pal-content>
+		</color-palette>
+	</body>
+</html>
