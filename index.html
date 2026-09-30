@@ -25,30 +25,84 @@
 			<img src="./images/thielith/undertale-frosted.png" class="pixel">
 		</div>
 
-		<div id="content">
-			<div id="topArea" class="center">
-				<div><!-- dummy area --></div>
-				<!-- <p aria-hidden="true" class="" id="topAreaText">the room between...</p>
-				<div aria-hidden="true" class=" socials">
-					<a><img src="./images/socials/egg.png" class="pixel" style="width:5em;height:5em"></a>
-				</div> -->
+		<div id="content" style="
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		">
+			<div id="topArea" class="center" style="
+					display: grid;
+					grid-template-areas:
+						'. . . . .'
+						'. . l . .'
+						's . l . .'
+						'. . k . .'
+						'. . b . .';
+					grid-template-columns: 200px 80px min(800px, 100%) 80px 200px;
+					grid-template-rows: 7fr 5fr 15fr 1fr 10fr;
+					width: 75%;
+					margin: auto;
+			">
 
-				<div>
-					<img src="./images/header-logo.png" class="pixel">
-					<h1 id="topAreaText">Welcome to my website!</h1>
-					<div class="socials">
-						<a target="_blank" href="https://www.youtube.com/@Thielith"><img src="./images/socials/youtube_base.svg"></a>
-						<a target="_blank" href="https://www.youtube.com/@thieliths-jukebox"><img src="./images/socials/youtube_base.svg"></a>
-						<a target="_blank" href="https://bsky.app/profile/thielith.bsky.social"><img src="./images/socials/bluesky.svg"></a>
-						<a target="_blank" href="https://thielith.tumblr.com/"><img src="./images/socials/tumblr.svg"></a>
-						<a target="_blank" href="https://thielith.itch.io/"><img src="./images/socials/itch-io.svg"></a>
-						<!-- <a href="https://thielith.newgrounds.com/"><img src="./images/socials/newgrounds.svg"></a>
-						<a href="https://www.hyunsdojo.com/profile/thielith/"><img src="./images/socials/hyuns-dojo.svg"></a> -->
+
+				<div class="socials" style="
+					grid-area: s;
+					height: 100%;
+					width: 100%;
+					margin-left: auto;
+					margin-right: auto;
+					padding: 10px;
+				">
+					<div style="
+						display: flex;
+						flex-direction: row;
+						height: fit-content;
+						gap: 5px;
+						align-items: center;
+					">
+						<img src="./images/wip.png" style="
+							display: block;
+							width: 2em;
+							height: auto;
+							aspect-ratio: 1/1;
+						">
+						<p>Home</p>
 					</div>
 				</div>
-								
-				<div style="width:fit-content; height: fit-content;">
-					<div id="topAreaContinue"><b></b></div> <!-- ⌄ -->
+
+				<div style="
+					grid-area: l;
+					height: 100%;
+					width: 100%;
+				">
+					<img src="./images/header-logo.png" class="pixel">
+					<h1 id="topAreaText">Welcome to my website!</h1>
+				</div>
+
+				<!-- <div style="height: 3rem;"></div> -->
+
+				<div style="
+					grid-area: b;
+					height: 100%;
+					width: 100%;
+				">
+					<div>
+						<div class="socials" style="
+							margin-left: auto;
+							margin-right: auto;
+							padding: 30px 20px 20px 20px;
+						">
+							<a target="_blank" href="https://www.youtube.com/@Thielith"><img src="./images/socials/youtube_base.svg"></a>
+							<a target="_blank" href="https://www.youtube.com/@thieliths-jukebox"><img src="./images/socials/youtube_base.svg"></a>
+							<a target="_blank" href="https://bsky.app/profile/thielith.bsky.social"><img src="./images/socials/bluesky.svg"></a>
+							<a target="_blank" href="https://thielith.tumblr.com/"><img src="./images/socials/tumblr.svg"></a>
+							<a target="_blank" href="https://thielith.itch.io/"><img src="./images/socials/itch-io.svg"></a>
+							<!-- <a href="https://thielith.newgrounds.com/"><img src="./images/socials/newgrounds.svg"></a>
+							<a href="https://www.hyunsdojo.com/profile/thielith/"><img src="./images/socials/hyuns-dojo.svg"></a> -->
+						</div>
+					</div>
 				</div>
 			</div>
 			
