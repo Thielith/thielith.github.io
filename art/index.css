@@ -90,3 +90,12 @@ hex, rgb, hsv{
 }
 
 
+
+codeblock{
+	display: block;
+	/* width: 25%; */
+	padding: 10px;
+	border: 1px solid gray;
+	background-color: var(--darkBgColor);
+}
+

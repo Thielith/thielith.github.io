@@ -4,6 +4,7 @@
 		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="colors.css">
 		<link rel="stylesheet" href="../utils.css">
+		<script type="module" src="./modules/markdown.js"></script>
 		<script src="index.js"></script>
 	</head>
 	
@@ -101,7 +102,7 @@
 				<h3>Other</h3>
 			</a>
 			<pal-content>
-				<p>Cyan-ish</p>
+				<p>Cyan-T</p>
 				<pal-row>
 					<color-swatch>
 						<hex>#85ced6</hex>
@@ -247,7 +248,7 @@
 					</color-swatch>
 				</pal-row>
 
-				<p>White w/ Hue</p>
+				<p>Sky White</p>
 				<pal-row>
 					<color-swatch>
 						<hex>#ffffff</hex>
@@ -428,5 +429,56 @@
 				</pal-row>
 			</pal-content>
 		</color-palette>
+
+		<div>
+			<h1>temp</h1>
+			<h3>Code for color palettes</h3>
+			<codeblock><div id="testing">
+```
+$c-onyx:(
+	1: #d1cad9,
+	2: #afa3bd,
+	3: #797089,
+	4: #443e56,
+	5: #292634,
+	6: #1b1a23,
+	7: #15151f,
+	8: #111117,
+	9: #0c0c12
+);
+
+$c-steel:(
+	1: #90a6b0,
+	2: #6b7b82,
+	3: #495459,
+	4: #2a3033,
+	5: #1b1f21,
+	6: #101314,
+	7: #0a0c0d
+);
+
+$c-sky-white:(
+	1: #ffffff,
+	2: #d5e8ed,
+	3: #bcdce6,
+	4: #a0ccd9,
+	5: #87b6c4,
+	6: #6d99b3,
+	7: #557da3,
+	8: #376794 
+);
+
+$c-cyan-t:(
+	1: #85ced6,
+	2: #0cc8cf,
+	3: #0aa3a8,
+	4: #098d94,
+	5: #087482,
+	6: #076473,
+	7: #064e5e
+);
+```
+			</div></codeblock>
+		</div>
 	</body>
 </html>
