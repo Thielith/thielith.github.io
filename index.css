@@ -2,7 +2,10 @@
 	--darkBgColor: #1b1f21;
 	--logoRotation: -15deg;
 
-	--h1-textSize: 60px;
+
+	--h1-textSize: 4rem;
+	--h2-textSize: 3rem;
+
 
 	--bar-background: black;
 	--bar-border: 10px solid gray;
@@ -12,12 +15,39 @@
 	--bar-padding: 30px 20px 20px 20px;
 	--bar-gap: 20px;
 
+
 	--bar-content-height: 5rem;
 	--bar-content-extrude: -10px;
 	--bar-content-extrude-active: 5px;
 	--bar-content-extrude-color: gray;
 	--bar-content-extrude-color-focus: lightblue;
 	--bar-content-extrude-color-active: lightblue;
+
+
+	--sidebar-rotate: 8deg;
+	--sidebar-translate: 0 -5%;
+	--sidebar-height: 110%;
+	--sidebar-width: 20%;
+	--sidebar-background: black;
+	--sidebar-border: 10px solid white;
+	--sidebar-gap: 20px;
+
+	--sidebar-item-background: black;
+	--sidebar-item-background-disabled: black;
+	--sidebar-item-background-hover: gray;
+
+	--sidebar-item-text-color: white;
+	--sidebar-item-text-color-disabled: gray;
+	--sidebar-item-text-color-hover: white;
+	--sidebar-item-text-color-active: gold;
+	
+	--sidebar-item-border: 10px solid white;
+	--sidebar-item-border-disabled: 10px solid gray;
+	--sidebar-item-border-hover: 10px solid lightblue;
+	--sidebar-item-border-active: 10px solid gold;
+	--sidebar-item-border-radius: 20px;
+	--sidebar-item-padding: 10px 20px;
+
 
 	--outline-size-1: 1px;
 	--outline-size-2: 1px;
@@ -45,6 +75,14 @@ body{
 	background-color: var(--darkBgColor);
 	height: 100vh;
 	width: 100hw;
+	overflow: hidden;
+}
+
+h1{
+	font-size: var(--h1-textSize);
+}
+h2{
+	font-size: var(--h2-textSize);
 }
 
 
@@ -139,12 +177,8 @@ content-item{
 }
 content-item.centerpiece > img{
 	width: min(800px, 100%);
+	padding-bottom: 1rem;
 }
-h1{
-	font-size: var(--h1-textSize);
-	margin-top: 1rem;
-}
-
 
 fancy-bar{
 	display: flex;
@@ -183,4 +217,73 @@ fancy-bar a:active{
 
 fancy-bar img{
 	height: var(--bar-content-height);
+}
+
+/*.--------------------------.*/
+/*|==========================|*/
+/*'--------------------------'*/
+
+
+
+/*.--------------------------.*/
+/*| sidebar                  |*/
+/*'--------------------------'*/
+
+sidebar{
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: top right;
+	rotate: var(--sidebar-rotate);
+	translate: var(--sidebar-translate);
+	
+	height: var(--sidebar-height);
+	width: var(--sidebar-width);
+	background-color: var(--sidebar-background);
+	border-right: var(--sidebar-border);
+	flex-direction: column;
+	gap: var(--sidebar-gap);
+	justify-content: center;
+}
+
+sidebar > a{
+	background-color: var(--sidebar-item-background);
+	border-top: var(--sidebar-item-border);
+	border-bottom: var(--sidebar-item-border);
+	border-left: var(--sidebar-item-border);
+	border-right: none;
+	border-top-left-radius: var(--sidebar-item-border-radius);
+	border-bottom-left-radius: var(--sidebar-item-border-radius);
+
+	padding: var(--sidebar-item-padding);
+	align-self: flex-end;
+	width: fit-content;
+	
+	text-align: right;
+	font-size: var(--h2-textSize);
+	color: var(--sidebar-item-text-color);
+	cursor: pointer;
+	user-select: none;
+}
+sidebar > a.disabled{
+	background-color: var(--sidebar-item-background-disabled);
+	border-left: var(--sidebar-item-border-disabled);
+	border-top: var(--sidebar-item-border-disabled);
+	border-bottom: var(--sidebar-item-border-disabled);
+	color: var(--sidebar-item-text-color-disabled);
+
+	cursor: default;
+}
+sidebar > a:hover:not(.disabled){
+	border-left: var(--sidebar-item-border-hover);
+	border-top: var(--sidebar-item-border-hover);
+	border-bottom: var(--sidebar-item-border-hover);
+	color: var(--sidebar-item-text-color-hover);
+}
+sidebar > a:active:not(.disabled){
+	border-left: var(--sidebar-item-border-active);
+	border-top: var(--sidebar-item-border-active);
+	border-bottom: var(--sidebar-item-border-active);
+	color: var(--sidebar-item-text-color-active);
 }
