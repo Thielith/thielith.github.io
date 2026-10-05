@@ -25,7 +25,10 @@
 
 
 	--sidebar-rotate: 8deg;
-	--sidebar-translate: 0 -5%;
+	--sidebar-translate-x: 0;
+	--sidebar-translate-y: -5%;
+	--sidebar-translate-x-closed: -41%;
+	--sidebar-translate-y-closed: 105%;
 	--sidebar-height: 110%;
 	--sidebar-width: 20%;
 	--sidebar-background: black;
@@ -236,7 +239,7 @@ sidebar{
 	left: 0;
 	transform-origin: top right;
 	rotate: var(--sidebar-rotate);
-	translate: var(--sidebar-translate);
+	translate: var(--sidebar-translate-x) var(--sidebar-translate-y);
 	
 	height: var(--sidebar-height);
 	width: var(--sidebar-width);
@@ -245,6 +248,12 @@ sidebar{
 	flex-direction: column;
 	gap: var(--sidebar-gap);
 	justify-content: center;
+
+	transition: translate 0.25s;
+}
+
+sidebar.closed{
+	translate: var(--sidebar-translate-x-closed) var(--sidebar-translate-y-closed);
 }
 
 sidebar > a{
@@ -286,4 +295,10 @@ sidebar > a:active:not(.disabled){
 	border-top: var(--sidebar-item-border-active);
 	border-bottom: var(--sidebar-item-border-active);
 	color: var(--sidebar-item-text-color-active);
+}
+
+sidebar-button{
+	position: absolute;
+	top: 0;
+	left: 0;
 }

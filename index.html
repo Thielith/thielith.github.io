@@ -51,12 +51,18 @@
 			</div>
 		</content>
 
-		<sidebar>
+		
+
+		<sidebar id="sidebar" class="closed">
 			<a>Home</a>
 			<a target="_self" class="disabled">Featured</a>
 			<a target="_self" href="/art">Art</a>
 			<a target="_self" class="disabled">Projects</a>
 		</sidebar>
+
+		<sidebar-button>
+			<button onclick="toggleSidebar()">test</button>
+		</sidebar-button>
 
 		<div aria-hidden="true" id="bg">
 			<div id="bgRows"></div>
