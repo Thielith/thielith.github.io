@@ -38,8 +38,15 @@
 					<a target="_blank" href="https://bsky.app/profile/thielith.bsky.social"><img src="./images/socials/bluesky.svg"></a>
 					<a target="_blank" href="https://thielith.tumblr.com/"><img src="./images/socials/tumblr.svg"></a>
 					<a target="_blank" href="https://thielith.itch.io/"><img src="./images/socials/itch-io.svg"></a>
-					<!-- <a href="https://thielith.newgrounds.com/"><img src="./images/socials/newgrounds.svg"></a>
-					<a href="https://www.hyunsdojo.com/profile/thielith/"><img src="./images/socials/hyuns-dojo.svg"></a> -->
+					<!-- <a target="_blank" href="https://thielith.newgrounds.com/"><img src="./images/socials/newgrounds.svg"></a>
+					<a target="_blank" href="https://www.hyunsdojo.com/profile/thielith/"><img src="./images/socials/hyuns-dojo.svg"></a>
+					<a target="_blank" href="https://x.com/Thi3lith"><img src="./images/wip.png" class="pixel"></a>
+					<a target="_blank" href="https://www.twitch.tv/thi3lith"><img src="./images/wip.png" class="pixel"></a>
+					<a target="_blank" href="https://soundcloud.com/thieliths-jukebox"><img src="./images/wip.png" class="pixel"></a>
+					<a target="_blank" href="https://github.com/Thielith"><img src="./images/wip.png" class="pixel"></a>
+					<a target="_blank" href="https://cohost.org/thielith"><img src="./images/wip.png" class="pixel"></a>
+					<a target="_blank" href="https://bandcamp.com/thielith"><img src="./images/wip.png" class="pixel"></a>
+					<a target="_blank" href="https://steamcommunity.com/id/thielith/"><img src="./images/wip.png" class="pixel"></a> -->
 				</fancy-bar>
 			</content-item>
 
@@ -51,20 +58,23 @@
 			</div>
 		</content>
 
-		
+		<sidebar-button>
+			<button onclick="toggleSidebar()">
+				<img id="sidebar_button_icon" src="./images/menu.svg">
+			</button>
+		</sidebar-button>
 
 		<sidebar-wrapper>
-			<sidebar id="sidebar">
-				<a>Home</a>
+			<sidebar id="sidebar" class="closed">
+				<a target="_self" href="/">Home</a>
 				<a target="_self" class="disabled">Featured</a>
-				<a target="_self" href="/art">Art</a>
+				<a target="_self" class="disabled">Art</a>
 				<a target="_self" class="disabled">Projects</a>
 			</sidebar>
+			<sidebar-border id="sidebar_background" class="closed"/>
 		</sidebar-wrapper>
 
-		<sidebar-button>
-			<button onclick="toggleSidebar()">test</button>
-		</sidebar-button>
+		
 
 		<div aria-hidden="true" id="bg">
 			<div id="bgRows"></div>

@@ -3,6 +3,8 @@ let numLogos = 0;
 const numBgRows = 40;
 
 function initialize(){
+	closeSidebar();
+	
 	numLogos = logos.childElementCount;
 	for(let i=0; i<numBgRows; i++){
 		bgRows.appendChild(createBgRow(i));
@@ -48,9 +50,30 @@ function createBgRowContent(logoIndexOffset = 0){
 
 
 function toggleSidebar(){
-	if(sidebar.classList.contains("closed"))
-		sidebar.classList.remove("closed");
+	if(sidebar.classList.contains("closed")){
+		openSidebar();
+	}
 	else{
-		sidebar.classList.add("closed");
+		closeSidebar();
+	}
+}
+function openSidebar(){
+	sidebar.classList.remove("closed");
+	sidebar_background.classList.remove("closed");
+	sidebar_button_icon.classList.add("toggled");
+	sidebar_button_icon.src = "./images/close.svg";
+
+	for(const child of document.getElementById("sidebar").children){
+		child.tabIndex = "0";
+	}
+}
+function closeSidebar(){
+	sidebar.classList.add("closed");
+	sidebar_background.classList.add("closed");
+	sidebar_button_icon.classList.remove("toggled");
+	sidebar_button_icon.src = "./images/menu.svg";
+
+	for(const child of document.getElementById("sidebar").children){
+		child.tabIndex = "-1";
 	}
 }
