@@ -4,6 +4,7 @@ const numBgRows = 40;
 
 function initialize(){
 	closeSidebar();
+	test();
 	
 	numLogos = logos.childElementCount;
 	for(let i=0; i<numBgRows; i++){
@@ -76,4 +77,21 @@ function closeSidebar(){
 	for(const child of document.getElementById("sidebar").children){
 		child.tabIndex = "-1";
 	}
+}
+
+
+// https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API
+async function test() {
+	// const state = { page_id: 1, user_id: 5 };
+	// const url = "/test";
+	
+	// console.log("test start");
+	// history.pushState(state, "", url);
+	// console.log("pushed history state");
+
+	fetch(`/test/test.json`)
+		.then((response) => {return response.json()})
+		.then((data) => {
+			console.log("values:", data.value);
+		});
 }
